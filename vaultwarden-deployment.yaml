@@ -19,7 +19,7 @@ spec:
       containers:
         - image: vaultwarden/server:latest
           name: vaultwarden
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           volumeMounts:
           - mountPath: /data/
             name: vaultwarden-data
